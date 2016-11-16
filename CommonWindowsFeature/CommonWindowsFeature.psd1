@@ -28,10 +28,10 @@ CompanyName = 'Unknown'
 Copyright = '(c) 2016 tim.ker. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'Dsc Resource that combines WindowsFeature and WindowsOptional Feature'
 
 # Minimum version of the Windows PowerShell engine required by this module
-# PowerShellVersion = ''
+PowerShellVersion = '5.0'
 
 # Name of the Windows PowerShell host required by this module
 # PowerShellHostName = ''
