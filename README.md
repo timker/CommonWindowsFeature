@@ -8,7 +8,7 @@ Windows OS's either support WindowsFeature or WindowsOptionalFeature. DSC make i
 * It's best used with configurationData
 Helps solve dependencies when when configuration can run on different sku's
 
-[ConfigurationData Example](Examples\ExampleConfigrationData.ps1)
+[ConfigurationData Example](Examples/ExampleConfigurationData.ps1)
 
  ## Example
 ```
