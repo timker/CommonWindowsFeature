@@ -1,9 +1,14 @@
 # CommonWindowsFeature
-Combines WindowsFeature and WindowsOptionalFeature into one Resource.
 
+CommonWindowsFeature is a simple DSC resource that Combines WindowsFeature and WindowsOptionalFeature into one Composite Resource.
+
+Windows OS's either support WindowsFeature or WindowsOptionalFeature. DSC make it hard to use a DependsOn when the target OS could required either one of these resources. .
+
+* OS Type needs to be known at design time
+* It's best used with configurationData
 Helps solve dependencies when when configuration can run on different sku's
 
-replaces WindowsFeature & WindowsOptionalFeature
+[ConfigurationData Example](Examples\ExampleConfigrationData.ps1)
 
  ## Example
 ```
@@ -12,7 +17,7 @@ replaces WindowsFeature & WindowsOptionalFeature
         {
             WindowsFeatureName = 'Web-Server'
             WindowsOptionalFeatureName = 'IIS-WebServer'
-            IsWindowsServer = $false
+            IsWindowsServer = $false # this should calculated from Node Data
         }
 
 ```

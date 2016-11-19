@@ -12,7 +12,7 @@
  RootModule = '.\CommonWindowsFeature.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.1'
+ModuleVersion = '1.0.2'
 
 # ID used to uniquely identify this module
 GUID = '6ef0c94a-59f8-44f0-88a5-f06e93e05fce'
@@ -98,13 +98,16 @@ PrivateData = @{
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+         ProjectUri = 'https://github.com/timker/CommonWindowsFeature'
 
         # A URL to an icon representing this module.
         # IconUri = ''
 
         # ReleaseNotes of this module
-        # ReleaseNotes = ''
+         ReleaseNotes = ' 
+         - Added Documnetion
+         
+         '
 
         # External dependent modules of this module
         # ExternalModuleDependencies = ''
