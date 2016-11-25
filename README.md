@@ -6,7 +6,8 @@ Windows OS's either support WindowsFeature or WindowsOptionalFeature. DSC make i
 
 * OS Type needs to be known at design time
 * It's best used with configurationData
-Helps solve dependencies when when configuration can run on different sku's
+* It's a composite Resource so it does not need to be installed on the Target Node
+* Helps solve dependencies when when configuration can run on different sku's
 
 [ConfigurationData Example](Examples/ExampleConfigurationData.ps1)
 
